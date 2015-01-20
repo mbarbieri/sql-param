@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "SQL-Param: Replace params in SQL and beautify it",
+        "command": "sql_param"
+    }
+]
