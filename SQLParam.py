@@ -20,7 +20,7 @@ class SqlParamCommand(sublime_plugin.TextCommand):
             m =re.match(r"^PARAM (\d+) (.*)", line)
             try:
                 date = datetime.strptime(m.group(2)[0:19], '%Y-%m-%d %H:%M:%S')
-                params[int(m.group(1))] = "'" + date.strftime('%Y-%m-%d') + "'"
+                params[int(m.group(1))] = "'" + date.strftime('%d-%m-%Y') + "'"
             except ValueError as e:
                 params[int(m.group(1))] = m.group(2)
 
